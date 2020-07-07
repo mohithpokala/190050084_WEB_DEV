@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			body{
+				background-image: url('https://i.pinimg.com/originals/e3/fc/47/e3fc47f70691d8593abe033569acc16a.jpg');
+  				background-repeat: repeat;
+  				background-attachment: fixed; 
+  				background-size: 25% 10%;
+				
+			}
+			.fa {
+ 				  padding: 20px;
+				  font-size: 30px;
+				  width: 50px;
+				  text-align: center;
+				  text-decoration: none;
+				  margin: 5px 2px;
+			}		
+
+			.fa:hover {
+				    opacity: 0.7;
+			}
+
+			.fa-facebook {
+				  background-color: #3B5998;
+				  color: white;
+			}
+			.fa-linkedin {
+				  background-color: #007bb5;
+				  color: white;
+			}
+			.fa-snapchat-ghost {
+				  background-color: #fffc00;
+				  color: white;
+				  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+			}
+			.fa-instagram {
+				  background-color:#f40083;
+				  color: white;
+			}	
+			
+			h1{
+				text-align:center;
+				color:Red;
+				text-decoration:underline;
+				text-transform:uppercase;
+				text-shadow:2px 2px grey,3px 3px blue;
+			}
+			h2{
+				color:yellow;
+				text-decoraion:underline;
+				text-transform:uppercase;
+				text-shadow:1px 1px black;
+				
+			}
+			body {
+  				counter-reset: section;
+			}
+
+			h2 {
+			  counter-reset: subsection;
+			}
+
+			h2::before {
+				  counter-increment: section;
+				  content:  counter(section) ". ";
+			}
+
+			h3::before {
+				  counter-increment: subsection;
+				  content: counter(section) "." counter(subsection) " ";
+			}
+			h3{
+				color:brown;
+				text-decoraion:underline;
+				text-transform:uppercase;
+				text-shadow:1px 1px black;
+				
+			}
+			.class1{
+
+				color:Black;
+				block:block;
+				
+				width:10%
+				float:left
+			}
+			.class1 .hidden{
+				display:none;
+				color:white;
+				animation-name:example ;
+				animation-iteration-count:infinite;
+				animation-duration:2s;
+				animation-direction:alternate
+				float:left
+			}	
+			table {font-family: arial, sans-serif;width: 100%;}
+
+			td, th {border: 4px solid Red;text-align: center;padding: 16px;}
+
+			tr:nth-child(even) {text-align:center;background-color: Cornsilk;color:Lightcoral;}			
+			@keyframes example {
+  				0%   {background-color:aqua;}
+				25%  {background-color: cornsilk;}
+				50%  {background-color: lavender;}
+				75%  {background-color: skyblue;}
+				100% {background-color: yellowgreen;}
+			}
+			.class1 .dropbtn {
+  				background-color: #4CAF50;
+  				color: white;
+  				padding: 16px;
+  				font-size: 16px;
+  				border: 2px solid red;
+  				cursor: pointer;
+				float:left;
+			}	
+			.class1:hover .hidden {
+  				display: inline-block;
+			}
+			.class1:hover .dropbtn{
+				background-color:orange;
+			}
+			.social {
+			  display: flex;
+			}
+
+			.one{
+				margin-left:10px;
+				margin-right:15px;
+				margin-top:10px;
+				margin-bottom:5px;
+				color:blue;
+				text-align:center;
+			}
+			.gallery{
+  				margin-left:auto;
+				margin-right:auto;
+			        border: 2px solid #ccc;
+				width: 25%;
+
+			}
+
+			.gallery:hover {
+  				border: 1px solid #777;
+			}
+
+			.gallery img {
+  				width: 100%;
+  				height: 500px;
+				display:block;
+				margin-left:auto;
+				margin-right:auto;
+				border:1px solid red;
+				transition:border 3s;
+			}
+			.gallery img:hover{
+				border:5px solid pink;
+			}
+			.gallery .desc {
+  				padding: 15px;
+  				text-align: center;
+			}
+			li a:link {color: green;background-color: transparent;text-decoration: none;}
+
+			li a:visited {color: purple;background-color: yellow;text-decoration: underline;}
+
+			li a:hover {color: red;background-color: transparent;text-decoration: underline;}
+
+			li a:active {color: yellow;background-color: transparent;text-decoration: underline;}
+			
+			marquee{
+				background-color:aquamarine;
+				color:red;
+				direction:left;
+				width:100%
+			}
+		</style>
+	</head>
+	<body>
+		<h1 title="my webpage">Hello!!Welcome to my world!</h1>
+		<marquee >
+			MOHITH POKALA heartfully welcomes you to his page
+		</marquee>
+
+		<div class="class1">
+			<button class="dropbtn">Menu</button>
+			<br>
+			<div class="hidden" title="menu" type="square">
+				<ul>
+					<li><a href="#ed">Education</a></li>
+					<li><a href="#hobbies">My Hobbies</a></li>
+					<li><a href="#goals">My goals</a></li>
+					<li><a href="#favourites">My interests</a></li>
+					<li><a href="#food">My favourite food</a></li>
+					<li><a href="#social">Social media</a></li>
+
+				</ul>
+			</div>
+		</div>
+		<div class="gallery">
+			<img src="image.jpg" alt="failed to download">
+			<div class="desc" title="my photo">This is me</div>
+		</div>
+		<pre class="one">Hey!!I am Pokala Mohith.I am from the city of pearls,Hyderabad.
+I am a second year undergraduate student in Computer Science department of IIT Bombay.</pre>
+		<table stlye="width:100%" id="ed">
+			<caption style="color:GREEN"><strong><h1>Education details<h1></strong></caption>
+			<tr>
+				<th><strong>Qualification</strong></th>
+				<th><strong>University/College</strong></th>
+				<th><strong>Year of Completion</strong></th>
+				<th><strong>Percentage</strong></th>
+			</tr>
+			<tr>
+
+				<td>BTech in CSE</td>
+				<td>Indian Institute of Technology,Bombay</td>
+				<td>2023</td>
+				<td>NA</td>
+			</tr>
+			<tr>
+
+				<td>Board of Intermediate Education,TELANGANA</td>
+				<td>FIITJEE HYDERABAD</td>
+				<td>2019</td>
+				<td>98.6</td>
+			</tr>
+
+			<tr>
+				<td>ICSE EXAMINATION</td>
+				<td>ST.JOSEPH'S SCHOOL</td>
+				<td>2017</td>
+				<td>96.5%</td>
+			</tr>
+
+		</table>
+		<hr>
+		
+		<h2>My Hobbies</h2>
+			<ul id="hobbies" class="square" title="My hobbies">
+				<li><h3>I love painting</h3></li>
+				<li><h3>I like playing piano</h3></li>
+				<li><h3>Coding is one of my favourite passtime</h3></li>
+			</ul>
+		<hr>
+
+		<h2>My Goals</h2>
+		<!-- These are my goals-->
+			<ul id="goals" class="square" title="My goals">
+				<li><h3>I am an aspiring enginner</h3></li>
+				<li><h3>I want to contribute something o the society</h3></li>
+				<li><h3>My dream is to get well setled and live a happy and a peaceful life without this rat race</h3></li>
+			</ul>
+		<hr>
+
+		<div id="favourites">
+		<h2>My Interests</h2>
+		<p id="obj4">
+			<mark>I love &#128151 doing these things.</mark><br>
+			<ul type="circle">
+				<li><h3>I love craft.I try many craft at home</h3></li>
+				<li><h3>I wish to know about more and more facts about India.I keep watching youtube videos based on them.</h3></li>
+				<li><h3>I love gardening</h3></li>
+				<li><h3>I love travelling.I have been to many places in India</h3></li>
+				<li><h3>I love acting.But I didnt explore this field</h3></li>
+			</ul>
+		</p>
+		</div>
+		<hr>
+		
+		<div id="food">
+		<h2>My favourite food</h2>
+		<p style="color:olive;font-size:100%">
+				Being an <strong>Hyderabadi</strong> I love <em>biryani </em>.I love sweets. &#127854 &#127849<em>Motichur laddu and mysore pak </em>are my favourites.I love South Indian dishes especially breakfasts like <em>Dosa,Vada,Sambhar</em>.I love non-vegeterian foods especially seafood.&#129424
+		</p>
+		</div>
+		
+		<h2>You can contact me using:</h2>
+		<div class="social" id="social">
+			<div><a href="https://www.instagram.com/mohith_pokala/?hl=en" class="fa fa-instagram"></a></div>
+			<div><a href="https://www.facebook.com/profile.php?id=100010459780301" class="fa fa-facebook"></a></div>
+			<div><a href="https://www.snapchat.com/add/mohith_0401" class="fa fa-snapchat-ghost"></a></div>
+			<div><a href="https://www.linkedin.com/in/mohith-pokala-35385a194" class="fa fa-linkedin"></a></div>
+		</div>
+		<button style="display: block;margin-right: auto;margin-left: auto;"type="button" onclick="f()">Exit<button>
+		<script>
+			var myWindow;
+
+			function f() {
+				alert('Thanks for viewing my page');
+				myWindow = window.open("https://www.google.com", "_blank", "width=500, height=500");
+			}
+
+
+		</script>	
+	</body>
+</html>
+			
