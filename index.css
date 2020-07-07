@@ -1,0 +1,178 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			body{
+				background-image: url('https://i.pinimg.com/originals/e3/fc/47/e3fc47f70691d8593abe033569acc16a.jpg');
+  				background-repeat: repeat;
+  				background-attachment: fixed; 
+  				background-size: 25% 10%;
+				
+			}
+			.fa {
+ 				  padding: 20px;
+				  font-size: 30px;
+				  width: 50px;
+				  text-align: center;
+				  text-decoration: none;
+				  margin: 5px 2px;
+			}		
+
+			.fa:hover {
+				    opacity: 0.7;
+			}
+
+			.fa-facebook {
+				  background-color: #3B5998;
+				  color: white;
+			}
+			.fa-linkedin {
+				  background-color: #007bb5;
+				  color: white;
+			}
+			.fa-snapchat-ghost {
+				  background-color: #fffc00;
+				  color: white;
+				  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+			}
+			.fa-instagram {
+				  background-color:#f40083;
+				  color: white;
+			}	
+			
+			h1{
+				text-align:center;
+				color:Red;
+				text-decoration:underline;
+				text-transform:uppercase;
+				text-shadow:2px 2px grey,3px 3px blue;
+			}
+			h2{
+				color:yellow;
+				text-decoraion:underline;
+				text-transform:uppercase;
+				text-shadow:1px 1px black;
+				
+			}
+			body {
+  				counter-reset: section;
+			}
+
+			h2 {
+			  counter-reset: subsection;
+			}
+
+			h2::before {
+				  counter-increment: section;
+				  content:  counter(section) ". ";
+			}
+
+			h3::before {
+				  counter-increment: subsection;
+				  content: counter(section) "." counter(subsection) " ";
+			}
+			h3{
+				color:brown;
+				text-decoraion:underline;
+				text-transform:uppercase;
+				text-shadow:1px 1px black;
+				
+			}
+			.class1{
+
+				color:Black;
+				block:block;
+				
+				width:10%
+				float:left
+			}
+			.class1 .hidden{
+				display:none;
+				color:white;
+				animation-name:example ;
+				animation-iteration-count:infinite;
+				animation-duration:2s;
+				animation-direction:alternate
+				float:left
+			}	
+			table {font-family: arial, sans-serif;width: 100%;}
+
+			td, th {border: 4px solid Red;text-align: center;padding: 16px;}
+
+			tr:nth-child(even) {text-align:center;background-color: Cornsilk;color:Lightcoral;}			
+			@keyframes example {
+  				0%   {background-color:aqua;}
+				25%  {background-color: cornsilk;}
+				50%  {background-color: lavender;}
+				75%  {background-color: skyblue;}
+				100% {background-color: yellowgreen;}
+			}
+			.class1 .dropbtn {
+  				background-color: #4CAF50;
+  				color: white;
+  				padding: 16px;
+  				font-size: 16px;
+  				border: 2px solid red;
+  				cursor: pointer;
+				float:left;
+			}	
+			.class1:hover .hidden {
+  				display: inline-block;
+			}
+			.class1:hover .dropbtn{
+				background-color:orange;
+			}
+			.social {
+			  display: flex;
+			}
+
+			.one{
+				margin-left:10px;
+				margin-right:15px;
+				margin-top:10px;
+				margin-bottom:5px;
+				color:blue;
+				text-align:center;
+			}
+			.gallery{
+  				margin-left:auto;
+				margin-right:auto;
+			        border: 2px solid #ccc;
+				width: 25%;
+
+			}
+
+			.gallery:hover {
+  				border: 1px solid #777;
+			}
+
+			.gallery img {
+  				width: 100%;
+  				height: 500px;
+				display:block;
+				margin-left:auto;
+				margin-right:auto;
+				border:1px solid red;
+				transition:border 3s;
+			}
+			.gallery img:hover{
+				border:5px solid pink;
+			}
+			.gallery .desc {
+  				padding: 15px;
+  				text-align: center;
+			}
+			li a:link {color: green;background-color: transparent;text-decoration: none;}
+
+			li a:visited {color: purple;background-color: yellow;text-decoration: underline;}
+
+			li a:hover {color: red;background-color: transparent;text-decoration: underline;}
+
+			li a:active {color: yellow;background-color: transparent;text-decoration: underline;}
+			
+			marquee{
+				background-color:aquamarine;
+				color:red;
+				direction:left;
+				width:100%
+			}
+		</style>
