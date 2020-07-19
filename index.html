@@ -102,7 +102,7 @@
 					margin-left:auto;
 					margin-right:auto;
 					border:1px solid red;
-                    left:90%;
+                    			left:90%;
 				
 				}
                 h1{
@@ -130,29 +130,29 @@
                 #span2{color:lavenderblush;}
                 #span2 img{margin-left:auto;margin-right:auto;width:80%}
                 input[type=text], textarea{
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
+  			width: 100%;
+  			padding: 12px 20px;
+  			margin: 8px 0;
+  			display: inline-block;
+  			border: 1px solid #ccc;
+  			border-radius: 4px;
+  			box-sizing: border-box;
+		}
 
-input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+		input[type=submit],input[type=reset] {
+  			width: 45%;
+  			background-color: #4CAF50;
+  			color: white;
+  			padding: 14px 20px;
+  			margin: 18px 10px;
+  			border: none;
+  			border-radius: 4px;
+  			cursor: pointer;
+		}
 
-input[type=submit]:hover {
-  background-color: #45a049;
-}
+		input[type=submit]:hover {
+  			background-color: #45a049;
+		}
              }
             
 			@media screen and (min-width:768px){
@@ -212,7 +212,7 @@ input[type=submit]:hover {
                 #courses ul li {float:left;clear:left;}
                 #contactme{width:100%;clear:left;left:0%;display:block;}
                 input[type=text] {
-				    width: 55%;
+				    width: 35%;
   					padding: 12px 20px;
   					
   					display: inline-block;
@@ -230,12 +230,12 @@ input[type=submit]:hover {
   					box-sizing: border-box;
 				}
 
-input[type=submit] {
-  width: 70%;
+input[type=submit], input[type=reset] {
+  width: 30%;
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
-  margin: 8px 0;
+  margin: 18px 10px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -278,7 +278,7 @@ input[type=submit]:hover {
 			<div class="gallery" id="aboutme">
     			<h1>Hello Peeps!!</h1>
             
-                <br><br><br>
+                <h2>About Me</h2>
 				<img src="D://WhatsApp Image 2020-07-17 at 12.15.44.jpeg">
                 <p>    I am Pokala Mohith.</p><p>I am a second year undergraduate at CSE department of IIT Bombay.</p><p>I am from the royal city of pearls....Hyderabad!!</p>
             </div>
@@ -353,7 +353,7 @@ input[type=submit]:hover {
 			<div id="contactme">
             	<br><br><br>
             	<h2>Contact me</h2>
-  				<form action="contact.php" style="color:white">
+  				<form action="https://formspree.io/mzbjklbp" method="POST" style="color:white">
 
     			<label for="name"> Name</label><br>
     				<input type="text" id="name" name="name" placeholder="Your name..">
@@ -366,7 +366,7 @@ input[type=submit]:hover {
     			<label for="subject">Subject</label><br>
     				<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-    				<input type="submit" value="Submit">
+    				<input type="submit" value="Submit"><input type="reset" value="Reset">
 
   				</form>
                 <div class="social" id="social">
