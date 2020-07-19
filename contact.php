@@ -11,5 +11,4 @@ if(!empty($_POST["send"])) {
 	    $type = "success";
 	}
 }
-require_once "contact-view.php";
 ?>
