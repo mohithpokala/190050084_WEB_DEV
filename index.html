@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -8,7 +9,37 @@
 			body{
 				background-color:black;
 			}
-			
+            .social{display:flex;flex-wrap:wrap;margin-left:auto;justify-content:space-around;margin-right:auto;}
+			.fa {
+ 				  padding: 20px;
+				  font-size: 30px;
+				  width: 50px;
+				  text-align: center;
+				  text-decoration: none;
+				  margin: 5px 2px;
+			}		
+
+			.fa:hover {
+				    opacity: 0.7;
+			}
+
+			.fa-facebook {
+				  background-color: #3B5998;
+				  color: white;
+			}
+			.fa-linkedin {
+				  background-color: #007bb5;
+				  color: white;
+			}
+			.fa-snapchat-ghost {
+				  background-color: #fffc00;
+				  color: white;
+				  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+			}
+			.fa-instagram {
+				  background-color:#f40083;
+				  color: white;
+			}	
 			
             @media screen and (max-width:768px){
             	.forlargescreen{display:none;}
@@ -18,12 +49,12 @@
                  }
                 .hidden{
                 	align-items:center;width:50%;
-                    position:fixed;top:24px;color:white;display:flex;flex-direction:column;
-                    height:90vh;background:none;z-index:1;left:-400px;background-color:black;
+                    position:fixed;top:24px;color:white;display:flex;flex-direction:column;justify-content:space-around;
+                    height:95vh;background:none;z-index:1;left:-400px;background-color:black;
                 }
                 .new{background-color:green;border:2px solid red;border-radius:15px;color:white;width:98%;
                 	padding:1px;height:13vh;vertical-align:center;color:red;
-                	font-family: 'Audiowide', cursive;margin-left:20px;
+                	font-family: 'Audiowide', cursive;margin-left:20px;align-items:center;
                   }
                 .new:hover{opacity:0.5;}
                 .new a{text-decoration:none;color:yellow;}
@@ -66,7 +97,7 @@
                 
                 .gallery img {
   					width: 100%;
-  					height: 250px;
+  					height: 450px;
 					display:block;
 					margin-left:auto;
 					margin-right:auto;
@@ -98,15 +129,39 @@
                 #span1 img{margin-left:auto;margin-right:auto;width:80%;}
                 #span2{color:lavenderblush;}
                 #span2 img{margin-left:auto;margin-right:auto;width:80%}
+                input[type=text], textarea{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
              }
             
 			@media screen and (min-width:768px){
             	
             	.hamburger{display:none;}
-                .forlargescreen{display:flex;justify-content:space-around;flex-direction:row;width:100%;position:fixed;}
+                .forlargescreen{display:flex;justify-content:space-around;flex-direction:row;width:98%;position:fixed;background:black;top:0%}
                 
                 .new{background-color:green;border:2px solid red;border-radius:15px;color:white;width:100%;
-                	height:2vh;color:red;
+                	height:5vh;color:red;text-align:center;
                 	font-family: 'Audiowide', cursive;
                   }
                 .new:hover{opacity:0.5;}
@@ -117,12 +172,12 @@
                 
 
 				
-                
-                .gallery{display:block;margin-left:auto;margin-right:auto;width:80%;z-index:-2;}
+              
+                .gallery{display:block;margin-left:auto;margin-right:auto;width:40%;z-index:-2;}
                 
                 .gallery img {
   					width: 100%;
-  					height: 250px;
+  					height: 500px;
 					display:block;
 					margin-left:auto;
 					margin-right:auto;
@@ -132,7 +187,7 @@
 				}
                 h1{
 				text-align:center;
-				color:Yellow;
+				color:ivory;
 				text-decoration:underline;
 				text-transform:uppercase;
 				text-shadow:2px 2px grey,3px 3px blue;
@@ -154,6 +209,41 @@
                 #span1 img{margin-left:auto;margin-right:auto;width:80%;}
                 #span2{color:lavenderblush;}
                 #span2 img{margin-left:auto;margin-right:auto;width:80%}
+                #courses ul li {float:left;clear:left;}
+                #contactme{width:100%;clear:left;left:0%;display:block;}
+                input[type=text] {
+				    width: 55%;
+  					padding: 12px 20px;
+  					
+  					display: inline-block;
+  					border: 1px solid #ccc;
+  					border-radius: 4px;
+					box-sizing: border-box;left:0%
+				}	
+				textarea {
+  					width: 70%;
+  					padding: 12px 20px;
+  					margin: 8px 0;
+				  	display: inline-block;
+  					border: 1px solid #ccc;
+  					border-radius: 4px;
+  					box-sizing: border-box;
+				}
+
+input[type=submit] {
+  width: 70%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
              }
             
                
@@ -171,7 +261,7 @@
 					<div class="new"><a href="#hobbies">My hobbies</a></div>
 					<div class="new"><a href="#education">My education</a></div>
 					<div class="new"><a href="#courses">My courses</a></div>
-					<div class="new"><a href="#contact me">Contact me</a></div>
+					<div class="new"><a href="#contactme">Contact me</a></div>
 				</div>
            </div>
            <div class="forlargescreen">
@@ -180,7 +270,7 @@
 					<div class="new"><a href="#hobbies">My hobbies</a></div>
 					<div class="new"><a href="#education">My education</a></div>
 					<div class="new"><a href="#courses">My courses</a></div>
-					<div class="new"><a href="#contact me">Contact me</a></div>
+					<div class="new"><a href="#contactme">Contact me</a></div>
 				
           </div>
 		
@@ -196,8 +286,8 @@
 			<div id="hobbies">
             	<br><br><br><br><br>
             	<h2>My hobbies</h2>
-                <ul type="circle">
-                	<li>Being a Cse Student,it is quite obvious that coding would be one of my hobby.Infact it is my favourite passtime.<br><br></li>
+                <ul >
+                	<li>Coding is my favourite passtime.!!!!!!!!<br><br></li>
                     <br><br>
                     <li>When I am at home and bored,I keep trying crafts.Although they aren't very attractive,it makes me happy.<br>Click the below picture to view my crafts!!<br>
                     	<a href="https://www.google.com">
@@ -233,30 +323,59 @@
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSJ-Twhnt0-OhmDQ5GlpzjwsL9tH0TZ8K2UeQ&usqp=CAU"></span></p><br><br><br>
            </div>
            <div id="courses">
+           		<br><br>
            		<h2>My courses</h2>
                 <br><br>
                 <ul type="none">
-					<li>Data Structures and Algorithms</li>
-                    <li>Discrete Structures</li>
-                    <li>Data Analysis And Interpretation</li>
-                    <li>Software Systems</li>
-                    <li>Abstarctions And Programming Paradigms</li>
-                    <li>Computer Programming and Utilization</li>
-                    <li>Basic Biology</li>
-                    <li>Basics of Electricity & Magnetism</li>
-                    <li>Linear Algebra</li>
-                    <li>Engineering Graphics & Drawing</li>
-                    <li>Organic & Inorganic Chemistry	</li>
-                    <li>Physical Chemistry</li>
-                    <li>Calculus</li>
-                    <li>Quantum Physics and Application</li>
-                    <li>Workshop Practice</li>
-                    <li>Physics Lab</li>
-                    <li>Chemistry Lab</li>
-                    <li>Programming Paradigms Laboratory</li>
+					<li>Data Structures and Algorithms<br></li>
+                    <li>Discrete Structures<br></li>
+                    <li>Data Analysis And Interpretation<br></li>
+                    <li>Software Systems<br></li>
+                    <li>Abstarctions And Programming Paradigms<br></li>
+                    <li>Computer Programming and Utilization<br></li>
+                    <li>Basic Biology<br></li>
+                    <li>Basics of Electricity & Magnetism<br></li>
+                    <li>Linear Algebra<br></li>
+                    <li>Engineering Graphics & Drawing<br></li>
+                    <li>Organic & Inorganic Chemistry<br>	</li>
+                    <li>Physical Chemistry<br></li>
+                    <li>Calculus<br></li>
+                    <li>Quantum Physics and Application<br></li>
+                    <li>Workshop Practice<br></li>
+                    <li>Physics Lab<br></li>
+                    <li>Chemistry Lab<br></li>
+                    <li>Programming Paradigms Laboratory<br></li>
                     <br><br><br>
                </ul> 
            </div>
+           
+           		
+			<div id="contactme">
+            	<br><br><br>
+            	<h2>Contact me</h2>
+  				<form action="contact.php" style="color:white">
+
+    			<label for="name"> Name</label><br>
+    				<input type="text" id="name" name="name" placeholder="Your name..">
+<br>
+    			<label for="emailid" style="clear:left;">Email id</label><br>
+    				<input type="text" id="emailId" name="mailID" placeholder="Your emailID.."><br>
+
+    			
+
+    			<label for="subject">Subject</label><br>
+    				<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    				<input type="submit" value="Submit">
+
+  				</form>
+                <div class="social" id="social">
+			<div><a href="https://www.instagram.com/mohith_pokala/?hl=en" class="fa fa-instagram"></a></div>
+			<div><a href="https://www.facebook.com/profile.php?id=100010459780301" class="fa fa-facebook"></a></div>
+			<div><a href="https://www.snapchat.com/add/mohith_0401" class="fa fa-snapchat-ghost"></a></div>
+			<div><a href="https://www.linkedin.com/in/mohith-pokala-35385a194" class="fa fa-linkedin"></a></div>
+		</div>
+			</div>
                 
                 
     <script>
