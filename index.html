@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -7,8 +6,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style>
 			body{
-				background-color:black;
+				background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRR8AgqwNayBm3DZ1DYEhPe5AknXFUIJ4mN2A&usqp=CAU");
+                background-size:cover;
 			}
+            html
+				{
+					scroll-behavior: smooth;width:90%;
+				}	
             .social{display:flex;flex-wrap:wrap;justify-content:space-around;clear:left;}
 			.fa {
  				  padding: 20px;
@@ -51,19 +55,19 @@
                 .hidden{
                 	align-items:center;width:40%;
                     position:fixed;top:24px;color:white;display:flex;flex-direction:column;justify-content:space-around;top:0%;z-index:-1;
-                    height:95vh;background:black;z-index:-1;left:-400px;
+                    height:105vh;background:black;z-index:-1;left:-400px;
                 }
                 .new{background-color:yellow;border:2px solid red;border-radius:15px;color:white;width:80%;
                 	padding:1px;height:13vh;vertical-align:center;color:red;
                 	font-family: 'Audiowide', cursive;margin-left:20px;align-items:center;
                   }
                 .new:hover{opacity:0.5;}
-                .new a{text-decoration:none;color:red;font-size:20px;}
+                .new a{text-decoration:none;color:blue;font-size:20px;}
                 .new a:visited{color:brown;}
                 .new a:active{color:lightblue;}
-                .hamburgerline{position:absolute;background-color:white;width:17px;height:2px;top:8px;right:2px;border-radius:2px;}
-            	.hamburgerline2{position:absolute;background-color:white;width:17px;height:2px;right:2px;top:3px;border-radius:2px;}
-            	.hamburgerline3{position:absolute;background-color:white;width:17px;height:2px;right:2px;top:13px;border-radius:2px;}
+                .hamburgerline{position:absolute;background-color:red;width:17px;height:2px;top:8px;right:2px;border-radius:2px;}
+            	.hamburgerline2{position:absolute;background-color:red;width:17px;height:2px;right:2px;top:3px;border-radius:2px;}
+            	.hamburgerline3{position:absolute;background-color:red;width:17px;height:2px;right:2px;top:13px;border-radius:2px;}
 				.hamburger.opens .hidden{animation-name:alpha;animation-duration:0.75s;
                 			animation-fill-mode:forwards;animation-timing-function: ease-in-out;
                  }
@@ -94,7 +98,7 @@
                 .hamburger.opens .hamburgerline2{transform: translateY(5px) rotate(45deg);}
                 .hamburger.opens .hamburgerline3{transform: translateY(-5px) rotate(-45deg);}
                 
-                .gallery{display:block;margin-left:auto;margin-right:auto;width:80%;z-index:-2;}
+                .gallery{display:block;margin-left:auto;margin-right:auto;width:80%;z-index:-2;color:red}
                 
                 .gallery img {
   					width: 100%;
@@ -166,15 +170,15 @@
                 	font-family: 'Audiowide', cursive;
                   }
                 .new:hover{opacity:0.5;}
-                .new a{text-decoration:none;color:brown;}
-                .new a:visited{color:red;}
-                .new a:active{color:lightblue;}
+                .new a{text-decoration:none;color:lightgreen;}
+                .new a:visited{color:violet;}
+                .new a:active{color:pink;}
                 
                 
 
 				
               
-                .gallery{display:block;margin-left:auto;margin-right:auto;width:35%;z-index:-2;}
+                .gallery{display:block;margin-left:auto;margin-right:auto;width:35%;z-index:-2;color:red;}
                 
                 .gallery img {
   					width: 100%;
@@ -200,7 +204,7 @@
 					text-shadow:1px 1px magenta;
                     text-align:center;
 				}
-                p{color:skyblue;text-align:center;}
+                p{color:red;text-align:center;}
                 ul{display:block;width:100%;text-wrap:break-sentence;list-style-type:none;}
                 li{color:gold;text-align:center;}
                 #hobbies img{margin-left:auto;margin-right:auto;width:50%;z-index:0}
@@ -320,6 +324,7 @@ input[type=submit]:hover {
                 <p><span id="span2">Now,I am doing My Btech in IIT BOMBAY.<br><br><br>
                 <img src="iitb.jpg"></span></p><br><br><br><br><br>
            </div>
+           
            <div id="courses">
            		<br><br><br>
            		<h2>My courses</h2>
@@ -391,6 +396,33 @@ input[type=submit]:hover {
         });
         
     </script>   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
     </body>
 </html>
 			
